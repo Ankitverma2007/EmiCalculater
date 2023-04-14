@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/api/calculate-emi" method="POST">
+      <label for="bookingDate">Booking Date</label>
+      <input type="date" name="bookingDate" id="bookingDate" /> <br />
+      <br />
+      <label for="checkinDate">Checkin Date</label>
+      <input type="date" name="checkinDate" id="checkinDate" /><br /><br />
+      <label for="downPayment">Down Payment</label>
+      <input type="number" name="downPayment" id="downPayment" /><br /><br />
+      <label for="amount">amount</label>
+      <input type="number" name="amount" id="amount" /><br /><br />
+      <label for="installmentType">Instalment Type</label>
+      <select name="installmentType" id="">
+        <option value="monthly">Monthly</option>
+        <option value="weekly">Weekly</option>
+        <option value="biweekly">Biweekly</option>
+      </select>  
+      <br /><br />
+      <label for="noOfEmi">No of EMI</label>
+      <input type="number" name="noOfEmi" id="noOfEmi" /><br /><br />
+        <button type="submit">Submit</button>
+    </form>
+
+  </body>
+</html>
